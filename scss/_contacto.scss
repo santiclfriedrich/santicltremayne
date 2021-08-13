@@ -1,0 +1,28 @@
+/*---------------contacto----------------------------SE ABRE CONTACTO----------------------contacto--------------*/
+
+.formulario{
+    &__boton{
+        position: relative;
+        left: 48%;
+        margin-bottom: $ancho;
+        border-radius: 12px;
+    } 
+    &__boton:hover{
+        background-color: black;
+    }
+    &__boton a{
+        color: $colorbg;
+    }
+    &__boton a:hover{
+        color: white;
+    }
+    &__control{ /*BARRITA DONDE VA EL MAIL*/
+        width: $all/2;
+        margin-left: 25%;
+        background-color: $colorbg;
+        padding: 5px;
+    }
+}
+
+
+/*-----------------------------------------------SE CIERRA CONTACTO----------------------------------------------*/

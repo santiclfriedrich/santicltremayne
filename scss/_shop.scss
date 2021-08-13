@@ -1,0 +1,22 @@
+/*----------------shop----------------------------------------SHOP---------------------------------shop------------------*/
+.carousel-item img{
+    object-fit: cover;
+    height: calc(100vh - 10px);
+    width: $all;
+}
+
+.botonshop{
+    border-radius: 12px;
+}
+
+.botonshop:hover{
+    background-color: black;
+}
+
+.botontext{
+    color: $colorbg;
+}
+
+.botontext:hover{
+    color: white;
+}

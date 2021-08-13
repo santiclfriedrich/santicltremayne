@@ -1,0 +1,25 @@
+/*-------------SE ABRE FOOTER---------------*/
+.footer{
+    background-image: linear-gradient($colorbg,black);
+    &__menu{
+        display: flex;
+        flex-direction: column;
+    }
+    &__icons{
+        display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 20px;
+    padding-top: 65px;
+    }
+    &__ig:hover{
+        background-color: $colorbg;
+    }
+    &__fb:hover{
+        background-color: $colorbg;
+    }
+}
+
+
+
+/*-------------SE CIERRA FOOTER--------------*/

@@ -1,0 +1,52 @@
+/*---------------------------HEADER---------------------------*/
+
+$ancho: 25px;
+
+.header{
+    &__logo{ /*LOGO TREMAYNE*/
+        font-family: 'Krona One', sans-serif;
+        color: #E1DBBE;
+        font-size: $ancho*2;
+    }
+
+    
+
+    &__logcont{ /*POSICIONAMIENTO DE LOGO EN EL MEDIO*/
+        position: absolute;
+        left: $all/2;
+        transform: translateX(-50%);
+        bottom: 0;
+    }
+    &__position{ /*POSICIONAMIENTO DE LOGO XA Q NO TOQUE ARRIBA*/
+        padding: 1.1em 0 !important;
+    }
+    &__burguermenu{ /*SACAR BORDES AL MENU BURGUER*/
+        border: none !important;
+        outline: none !important;
+        background-color: white;
+        height: 35px;  
+        padding: 4px;
+        position: relative;
+        left: 10px;
+        bottom: 2px;
+    }
+    &__burguericon{ /*ICONO DEL BURGUERMENU*/
+        width: $ancho;
+    }
+    &__content{ /*ESPACIO ENTRE EL BORDE DE MENU*/
+        padding-left: 9px;
+    }
+    &__nav{ /*ESPACIO ENTRE CADA UNO DE LOS ITEMS DEL NAV*/
+        padding-left: 40px;
+    }
+    &__text{
+        border-radius: 12px;
+    }
+    &__text:hover{
+        background-color: #6c757d;
+        border-radius: 12px;
+    }
+}
+
+
+/*------------------------CIERRA HEADER------------------------*/

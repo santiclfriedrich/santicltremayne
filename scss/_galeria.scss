@@ -1,0 +1,44 @@
+/*---------------galeria--------------------------SE ABRE GALERÍA---------------------galeria--------------------*/
+
+#portfolio{
+    margin: 15px 100*2px;
+}
+
+.galeria{
+    &__autor{
+        color: grey;
+    }
+
+    &__imagenes{
+        display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    align-content: center;
+    }
+}
+
+#portfolio2{
+    margin: 15px 100*2px;
+}
+
+.galeria2{
+    &__autor2{
+        color: grey;
+    }
+
+    &__imagenes2{
+        display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    align-content: center;
+    }
+}
+    
+
+
+
+
+
+/*------------------------------------------------SE CIERRA GALERÍA----------------------------------------------*/

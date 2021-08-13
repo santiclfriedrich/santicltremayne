@@ -1,0 +1,433 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css2?family=Archivo:wght@200&display=swap);
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  /* ESTILO DE FUENTE */
+  font-family: 'Archivo', sans-serif;
+  font-size: 18px;
+}
+
+h2 {
+  color: black;
+  font-size: 40px;
+}
+
+/*----------------home-----------------------------HOME------------------------------home----------------------*/
+/*----------------SE ABRE UNA SECTION---------*/
+.portada {
+  /* IMAGEN PORTADA */
+  background-image: url("/imagenes/home-portada.jpg");
+  height: 87vh;
+  width: 100%;
+  background-position: center;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.portada__texto {
+  text-align: center;
+}
+
+.portada__btn {
+  border-radius: 12px;
+  margin-left: 58px;
+}
+
+.portada__btn:hover {
+  background-color: grey;
+}
+
+/*--------------SE CIERRA LA 1ER SECTION-------*/
+/*------------SE ABRE 2DA SECTION-----------*/
+body {
+  background-color: #e2e2e2;
+}
+
+.prendas {
+  background-color: #e2e2e2;
+}
+
+.prendas__padre {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: auto auto auto;
+      grid-template-rows: auto auto auto;
+  text-align: center;
+}
+
+.prendas__imagenes {
+  width: 100%;
+}
+
+.prendas__boton {
+  position: relative;
+  bottom: 25px;
+}
+
+.prendas__boton:hover {
+  background-color: #e2e2e2;
+  border-color: #e2e2e2;
+}
+
+.formulario {
+  background-color: #e2e2e2;
+}
+
+/*--------------SE CIERRA 2DA SECTION----------*/
+/*----------------shop----------------------------------------SHOP---------------------------------shop------------------*/
+.carousel-item img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: calc(100vh - 10px);
+  width: 100%;
+}
+
+.botonshop {
+  border-radius: 12px;
+}
+
+.botonshop:hover {
+  background-color: black;
+}
+
+.botontext {
+  color: #e2e2e2;
+}
+
+.botontext:hover {
+  color: white;
+}
+
+/*---------------galeria--------------------------SE ABRE GALERÍA---------------------galeria--------------------*/
+#portfolio {
+  margin: 15px 200px;
+}
+
+.galeria__autor {
+  color: grey;
+}
+
+.galeria__imagenes {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+#portfolio2 {
+  margin: 15px 200px;
+}
+
+.galeria2__autor2 {
+  color: grey;
+}
+
+.galeria2__imagenes2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+/*------------------------------------------------SE CIERRA GALERÍA----------------------------------------------*/
+/*------------nosotros------------------------------SE ABRE NOSOTROS-------------------------nosotros------------*/
+.img-nosotros {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50vh;
+  width: 40%;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 5px;
+  border-color: #e2e2e2;
+}
+
+/*-----------------------------------------------SE CIERRA NOSOTROS----------------------------------------------*/
+/*---------------contacto----------------------------SE ABRE CONTACTO----------------------contacto--------------*/
+.formulario__boton {
+  position: relative;
+  left: 48%;
+  margin-bottom: 25px;
+  border-radius: 12px;
+}
+
+.formulario__boton:hover {
+  background-color: black;
+}
+
+.formulario__boton a {
+  color: #e2e2e2;
+}
+
+.formulario__boton a:hover {
+  color: white;
+}
+
+.formulario__control {
+  /*BARRITA DONDE VA EL MAIL*/
+  width: 50%;
+  margin-left: 25%;
+  background-color: #e2e2e2;
+  padding: 5px;
+}
+
+/*-----------------------------------------------SE CIERRA CONTACTO----------------------------------------------*/
+/*---------------------------HEADER---------------------------*/
+.header__logo {
+  /*LOGO TREMAYNE*/
+  font-family: 'Krona One', sans-serif;
+  color: #E1DBBE;
+  font-size: 50px;
+}
+
+.header__logcont {
+  /*POSICIONAMIENTO DE LOGO EN EL MEDIO*/
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 0;
+}
+
+.header__position {
+  /*POSICIONAMIENTO DE LOGO XA Q NO TOQUE ARRIBA*/
+  padding: 1.1em 0 !important;
+}
+
+.header__burguermenu {
+  /*SACAR BORDES AL MENU BURGUER*/
+  border: none !important;
+  outline: none !important;
+  background-color: white;
+  height: 35px;
+  padding: 4px;
+  position: relative;
+  left: 10px;
+  bottom: 2px;
+}
+
+.header__burguericon {
+  /*ICONO DEL BURGUERMENU*/
+  width: 25px;
+}
+
+.header__content {
+  /*ESPACIO ENTRE EL BORDE DE MENU*/
+  padding-left: 9px;
+}
+
+.header__nav {
+  /*ESPACIO ENTRE CADA UNO DE LOS ITEMS DEL NAV*/
+  padding-left: 40px;
+}
+
+.header__text {
+  border-radius: 12px;
+}
+
+.header__text:hover {
+  background-color: #6c757d;
+  border-radius: 12px;
+}
+
+/*------------------------CIERRA HEADER------------------------*/
+/*-------------SE ABRE FOOTER---------------*/
+.footer {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e2e2e2), to(black));
+  background-image: linear-gradient(#e2e2e2, black);
+}
+
+.footer__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 20px;
+  padding-top: 65px;
+}
+
+.footer__ig:hover {
+  background-color: #e2e2e2;
+}
+
+.footer__fb:hover {
+  background-color: #e2e2e2;
+}
+
+/*-------------SE CIERRA FOOTER--------------*/
+@-webkit-keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.header__position, .portada, #portfolio, .img-nosotros, .portada-shop {
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+/*------MEDIA QUERIES--------*/
+@media screen and (max-width: 768px) {
+  .header__logo {
+    font-size: 40px;
+    position: relative;
+    bottom: 2px;
+  }
+  .portada__btn {
+    position: relative;
+    right: 21px;
+  }
+  .prendas__boton {
+    font-size: 10px;
+  }
+  .footer__icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding-right: 0px;
+    padding-top: 0px;
+  }
+  .footer__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .carousel-item img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: auto;
+    width: auto;
+  }
+  .prendas__hijo button {
+    position: relative;
+    bottom: 10px;
+  }
+  .img-nosotros {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 40vh;
+    width: 100%;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 5px;
+    border-color: #e2e2e2;
+  }
+  .formulario__boton {
+    position: relative;
+    left: 42%;
+    margin-bottom: 25px;
+    border-radius: 12px;
+  }
+  .navbar-brand {
+    position: relative;
+  }
+  .header__burguermenu {
+    /*SACAR BORDES AL MENU BURGUER*/
+    position: relative;
+    left: -90%;
+    bottom: 4.5px;
+  }
+}
+
+@media screen and (max-width: 1320px) {
+  .header__logo {
+    font-size: 45px;
+    position: relative;
+    bottom: 2px;
+  }
+  .header__nav {
+    padding-left: 1px;
+  }
+  .portada__btn {
+    position: relative;
+    right: 9.5px;
+  }
+  .img-nosotros {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 40vh;
+    width: 50%;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 5px;
+    border-color: #e2e2e2;
+  }
+  .formulario__boton {
+    position: relative;
+    left: 46%;
+    margin-bottom: 25px;
+    border-radius: 12px;
+  }
+}

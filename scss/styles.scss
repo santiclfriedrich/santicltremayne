@@ -1,0 +1,150 @@
+@import url(https://fonts.googleapis.com/css2?family=Archivo:wght@200&display=swap);
+
+//IMPORT VARIABLES Y CLASES GENERALES
+
+@import "./partials/generales";
+
+//IMPORT ESTILO DE CADA PAGINA
+
+@import "./home";
+@import "./shop";
+@import "./galeria";
+@import "./nosotros";
+@import "./contacto";
+
+//HEADER
+@import "./header";
+
+//FOOTER
+@import "./footer";
+
+
+//ANIMACION
+
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.header__position, .portada, #portfolio, .img-nosotros, .portada-shop{
+    animation-name: aparecer;
+    animation-duration: 3s;
+}
+
+/*------MEDIA QUERIES--------*/
+
+@media screen and (max-width: 768px){
+    
+    .header__logo{ 
+        font-size: 40px;
+        position: relative;
+        bottom: 2px;
+    }
+  
+    .portada__btn{
+        position: relative;
+        right: 21px; 
+    }
+    
+    .prendas__boton{
+        font-size: 10px;
+        
+    }
+  
+    .footer__icons{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding-right: 0px;
+        padding-top: 0px;
+    }
+  
+    .footer__menu{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .carousel-item img{
+        object-fit: cover;
+        height: auto;
+        width: auto;
+    }
+  
+    .prendas__hijo button{
+        position: relative;
+        bottom: 10px;
+  }
+  
+
+    .img-nosotros{
+        display: flex;
+        height: 40vh;
+        width: 100%;
+        margin: 30px auto;
+        padding: 5*4px;
+        border-radius: 5px;
+        border-color: #e2e2e2;
+    }
+
+    .formulario__boton{
+        position: relative;
+        left: 42%;
+        margin-bottom: $ancho;
+        border-radius: 12px;
+    }
+
+    .navbar-brand{
+        position: relative;
+
+    }
+
+    .header__burguermenu{ /*SACAR BORDES AL MENU BURGUER*/
+        position: relative;
+        left: -90%;
+        bottom: 4.5px;
+    }
+
+    }
+
+    @media screen and (max-width: 1320px){
+
+        .header__logo{ 
+            font-size: 45px;
+            position: relative;
+            bottom: 2px;
+        }
+    
+        .header__nav{
+            padding-left: 1px;
+        }
+
+        .portada__btn{
+            position: relative;
+            right: 9.5px; 
+        }
+
+        .img-nosotros{
+            display: flex;
+            height: 40vh;
+            width: 50%;
+            margin: 30px auto;
+            padding: 5*4px;
+            border-radius: 5px;
+            border-color: #e2e2e2;
+        }
+
+        .formulario__boton{
+            position: relative;
+            left: 46%;
+            margin-bottom: $ancho;
+            border-radius: 12px;
+        }
+
+    
+    
+    }

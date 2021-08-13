@@ -1,0 +1,59 @@
+/*----------------home-----------------------------HOME------------------------------home----------------------*/
+
+/*----------------SE ABRE UNA SECTION---------*/
+.portada{ /* IMAGEN PORTADA */
+    background-image: url("/imagenes/home-portada.jpg");
+    height: 87vh;
+    width: $all;
+    background-position: center;
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    &__texto{
+        text-align: center;
+    }
+    &__btn{
+        border-radius: 12px;
+        margin-left: 58px;
+    }
+    &__btn:hover{
+        background-color: grey;
+    }
+    
+    
+}
+
+
+/*--------------SE CIERRA LA 1ER SECTION-------*/
+
+/*------------SE ABRE 2DA SECTION-----------*/
+body{
+    background-color: $colorbg;
+}
+
+.prendas{
+    background-color: $colorbg;
+    &__padre{
+        display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto;
+    text-align: center;
+    }
+    &__imagenes{
+        width: $all;
+    }
+    &__boton{
+        position: relative;
+        bottom: $ancho;
+    }
+    &__boton:hover{
+        background-color: $colorbg;
+        border-color: $colorbg;
+    }
+}
+
+.formulario{
+    background-color: $colorbg;
+}
+
+/*--------------SE CIERRA 2DA SECTION----------*/
