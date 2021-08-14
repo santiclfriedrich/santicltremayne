@@ -22,7 +22,7 @@ h2 {
 /*----------------SE ABRE UNA SECTION---------*/
 .portada {
   /* IMAGEN PORTADA */
-  background-image: url("/imagenes/home-portada.jpg");
+  background-image: url("./imagenes/home-portada.jpg");
   height: 87vh;
   width: 100%;
   background-position: center;
