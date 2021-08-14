@@ -157,6 +157,10 @@ body {
 
 /*------------------------------------------------SE CIERRA GALERÍA----------------------------------------------*/
 /*------------nosotros------------------------------SE ABRE NOSOTROS-------------------------nosotros------------*/
+.nosotros {
+  color: grey;
+}
+
 .img-nosotros {
   display: -webkit-box;
   display: -ms-flexbox;
