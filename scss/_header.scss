@@ -46,7 +46,22 @@ $ancho: 25px;
         background-color: #6c757d;
         border-radius: 12px;
     }
+    &__search{
+        position: absolute;
+        bottom: 89.5%;
+        left: 92%;
+        color: honeydew;
+    }
+    &__cart{
+        position: absolute;
+        bottom: 89.5%;
+        left: 95%;
+        color: honeydew;
+    }
 }
+
+
+
 
 
 /*------------------------CIERRA HEADER------------------------*/

@@ -1,6 +1,6 @@
 /*----------------home-----------------------------HOME------------------------------home----------------------*/
 
-/*----------------SE ABRE UNA SECTION---------*/
+/*----------------SE-ABRE-1ER-SECTION---------*/
 .portada{ /* IMAGEN PORTADA */
     background-image: url("../imagenes/home-portada.jpg");
     height: 87vh;
@@ -52,8 +52,29 @@ body{
     }
 }
 
-.formulario{
+.formulario2{
     background-color: $colorbg;
+    &__boton{
+        position: relative;
+        left: 48%;
+        margin-bottom: $ancho;
+        border-radius: 12px;
+    } 
+    &__boton:hover{
+        background-color: black;
+    }
+    &__boton a{
+        color: $colorbg;
+    }
+    &__boton a:hover{
+        color: white;
+    }
+    &__control{ /*BARRITA DONDE VA EL MAIL*/
+        width: $all/2;
+        margin-left: 25%;
+        background-color: $colorbg;
+        padding: 5px;
+    }
 }
 
 /*--------------SE CIERRA 2DA SECTION----------*/

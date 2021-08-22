@@ -10,12 +10,14 @@
     flex-direction: row;
     justify-content: flex-end;
     padding-right: 20px;
-    padding-top: 65px;
+    padding-top: 60px;
     }
     &__ig:hover{
         background-color: $colorbg;
+        border-radius: 12px;
     }
     &__fb:hover{
+        border-radius: 25px;
         background-color: $colorbg;
     }
 }
