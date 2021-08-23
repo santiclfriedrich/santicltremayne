@@ -35,9 +35,11 @@
     animation-duration: 3s;
 }
 
+
 /*-----------------------------------------------MEDIA-QUERIES--------------ALL-DISPOSITIVOS-----------------*/
 
-@media screen and (max-width: 768px){
+@media only screen 
+    and (max-device-width : 768px){
 
 
     /*-------------------------MEDIA-QUERIES-768-HEADER-----------------*/
@@ -101,6 +103,10 @@
 
     /*-------------------------SE-CIERRA-HEADER-------------------------*/
 
+    .formulario2__boton{
+        position: relative;
+    }
+
     /*-------------------------MEDIA-QUERIES-768-FOOTER-----------------*/
 
   
@@ -148,27 +154,6 @@
         object-fit: cover;
         height: auto;
         width: auto;
-    }
-
-    .prendas{
-        background-color: $colorbg;
-        &__padre{
-            display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: auto auto auto;
-        text-align: center;
-        }
-        &__imagenes{
-            width: $all;
-        }
-        &__boton{
-            position: relative;
-            bottom: $ancho;
-        }
-        &__boton:hover{
-            background-color: $colorbg;
-            border-color: $colorbg;
-        }
     }
     
     .prendas__hijo button{
@@ -220,7 +205,7 @@
 
     /*------------------SE CIERRA GALERIA MEDIA QUERIES-------------------*/
 
-    @media screen and (max-width: 1024px){
+    @media only screen and (max-device-width: 1024px) and (min-device-width: 769px){
     /*-----------------HEADER-MEDIA-QUERIES-----1024----------------------*/
 
         .header{
@@ -241,13 +226,13 @@
             }
             &__search{
                 position: absolute;
-                bottom: 88.7%;
+                bottom: 88%;
                 left: 92%;
                 color: honeydew;
             }
             &__cart{
                 position: absolute;
-                bottom: 88.7%;
+                bottom: 88%;
                 left: 95%;
                 color: honeydew;
             }
@@ -259,6 +244,46 @@
         }
     
     /*---------------------SE-CIERRA-HEADER-MEDIA-QUERIES--------1024------*/
+
+
+    #portfolio{
+        margin: 15px 15px;
+    }
+
+    .galeria{
+        &__autor{ 
+            color: grey;
+            text-align: center;
+        }
+    
+        &__imagenes{
+            display: grid;
+            grid-template-columns: 300px, 300px, 300px;
+            grid-template-rows: auto;
+            justify-content: center;
+            align-content: center;
+        }
+    }
+
+    #portfolio2{
+        margin: 15px 15px;
+    }
+
+    .galeria2{
+        &__autor2{
+            color: grey;
+            text-align: center;
+        }
+    
+        &__imagenes2{
+            display: grid;
+        grid-template-columns: 300px, 300px, 300px;
+        grid-template-rows: auto;
+        justify-content: center;
+        align-content: center;
+        }
+    }
+
 
         .portada__btn{
             position: relative;
@@ -289,7 +314,8 @@
 
     }
 
-    @media screen and (max-width: 320px){
+    @media only screen 
+    and (max-device-width : 320px){
 
         /*-----------------------HEADER----MEDIA-QUERIES---320---------------*/
         .envios{
@@ -303,12 +329,12 @@
             }
             &__search{
                 position: absolute;
-                bottom: 90.7%;
+                bottom: 90.1%;
                 left: 85.5%;
             }
             &__cart{
                 position: absolute;
-                bottom: 90.7%;
+                bottom: 90.1%;
                 left: 92.5%;
             }
             &__text{
@@ -327,7 +353,7 @@
         /*---------------HOME-----MEDIA-QUERIES-------320------------------*/
 
         .portada{
-            background-image: url(../imagenes/home-portada.jpg);
+            background-image: url(../imagenes/portfolio/portfolio3.jpg);
             height: 50vh;
         }
 
@@ -336,12 +362,74 @@
             right: 30px; 
         }
 
+        .prendas{
+            background-color: $colorbg;
+            &__padre{
+                display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: auto auto auto;
+            text-align: center;
+            }
+            &__imagenes{
+                width: $all;
+            }
+            &__boton{
+                position: relative;
+                bottom: $ancho;
+            }
+            &__boton:hover{
+                background-color: $colorbg;
+                border-color: $colorbg;
+            }
+        }
+
         .formulario2__boton{
             position: relative;
             left: 33%;
         }
 
         /*-------------SE-CIERRA-HOME---MEDIA-QUERIES-------320------------*/
+
+        /*-----------------------GALERIA----MEDIA-QUERIES---320---------------*/
+
+        #portfolio{
+            margin: 15px 15px;
+        }
+    
+        .galeria{
+            &__autor{ 
+                color: grey;
+                text-align: center;
+            }
+        
+            &__imagenes{
+                display: grid;
+            grid-template-columns: 300px;
+            grid-template-rows: auto;
+            justify-content: center;
+            align-content: center;
+            }
+        }
+    
+        #portfolio2{
+            margin: 15px 15px;
+        }
+    
+        .galeria2{
+            &__autor2{
+                color: grey;
+                text-align: center;
+            }
+        
+            &__imagenes2{
+                display: grid;
+            grid-template-columns: 300px;
+            grid-template-rows: auto;
+            justify-content: center;
+            align-content: center;
+            }
+        }
+        /*----------------------SE-CIERRA-GALERIA---QUERIES-----320------------*/
 
         /*---------------CONTACTO-FORMULARIO-----320-----------------------*/
         .contact__text{
@@ -377,7 +465,8 @@
         /*-------------------------SE-CIERRA-FOOTER---------320----------------*/
     }
 
-    @media screen and (max-width: 375px){
+    @media only screen 
+    and (max-device-width : 375px) and (min-device-width: 321px){
 
         /*-----------------------HEADER----MEDIA-QUERIES---375---------------*/
         .envios{
@@ -391,12 +480,12 @@
             }
             &__search{
                 position: absolute;
-                bottom: 90.7%;
+                bottom: 90.1%;
                 left: 85.5%;
             }
             &__cart{
                 position: absolute;
-                bottom: 90.7%;
+                bottom: 90.1%;
                 left: 92.5%;
             }
             &__text{
@@ -407,6 +496,27 @@
                 position: relative;
                 right: 35px;
                 left: 0px;
+            }
+        }
+
+        .prendas{
+            background-color: $colorbg;
+            &__padre{
+                display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: auto auto auto;
+            text-align: center;
+            }
+            &__imagenes{
+                width: $all;
+            }
+            &__boton{
+                position: relative;
+                bottom: $ancho;
+            }
+            &__boton:hover{
+                background-color: $colorbg;
+                border-color: $colorbg;
             }
         }
 
@@ -436,7 +546,54 @@
             }
       
             /*-------------------------SE-CIERRA-FOOTER---------375----------------*/
+
+        
+        /*-----------------------GALERIA----MEDIA-QUERIES---375---------------*/
+
+        #portfolio{
+            margin: 15px 15px;
+        }
+    
+        .galeria{
+            &__autor{ 
+                color: grey;
+                text-align: center;
+            }
+        
+            &__imagenes{
+                display: grid;
+            grid-template-columns: 300px;
+            grid-template-rows: auto;
+            justify-content: center;
+            align-content: center;
+            }
+        }
+    
+        #portfolio2{
+            margin: 15px 15px;
+        }
+    
+        .galeria2{
+            &__autor2{
+                color: grey;
+                text-align: center;
+            }
+        
+            &__imagenes2{
+                display: grid;
+            grid-template-columns: 300px;
+            grid-template-rows: auto;
+            justify-content: center;
+            align-content: center;
+            }
+        }
+        /*----------------------SE-CIERRA-GALERIA---QUERIES-----375------------*/
         /*---------------HOME-----MEDIA-QUERIES-------375------------------*/
+
+        .portada{
+            background-image: url(../imagenes/portfolio/portfolio3.jpg);
+            height: 50vh;
+        }
 
         .portada__btn{
             position: relative;
@@ -445,13 +602,14 @@
 
         .formulario2__boton{
             position: relative;
-            left: 37.5%;
+            left: 37%;
         }
 
         /*-------------SE-CIERRA-HOME---MEDIA-QUERIES-------375------------*/
     }
 
-    @media screen and (max-width: 425px){
+    @media only screen 
+    and (max-device-width : 425px) and (min-device-width: 376px){
 
         /*-----------------------HEADER----MEDIA-QUERIES---425---------------*/
         .envios{
@@ -465,12 +623,12 @@
             }
             &__search{
                 position: absolute;
-                bottom: 90.7%;
+                bottom: 90.1%;
                 left: 85.5%;
             }
             &__cart{
                 position: absolute;
-                bottom: 90.7%;
+                bottom: 90.1%;
                 left: 92.5%;
             }
             &__text{
@@ -485,7 +643,33 @@
         }
 
         .portada__btn{
-            margin-left: 45px;
+            margin-left: 55px;
+        }
+
+        .portada{
+            background-image: url(../imagenes/portfolio/portfolio3.jpg);
+            height: 50vh;
+        }
+
+        .prendas{
+            background-color: $colorbg;
+            &__padre{
+                display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: auto auto auto;
+            text-align: center;
+            }
+            &__imagenes{
+                width: $all;
+            }
+            &__boton{
+                position: relative;
+                bottom: $ancho;
+            }
+            &__boton:hover{
+                background-color: $colorbg;
+                border-color: $colorbg;
+            }
         }
         /*---------------SE-CIERRA-HEADER----------425---------------------*/
 
@@ -561,6 +745,6 @@
         
         .formulario2__boton{
             position: relative;
-            left: 39.5%;
+            left: 39%;
         }
     }
