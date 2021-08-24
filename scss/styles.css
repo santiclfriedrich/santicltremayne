@@ -387,7 +387,7 @@ body {
   }
   .portada__btn {
     position: relative;
-    right: 21px;
+    right: 15px;
   }
   .prendas__boton {
     font-size: 15px;
@@ -534,7 +534,6 @@ body {
   .header__logo {
     font-size: 44px;
     position: relative;
-    bottom: 2px;
   }
   .header__nav {
     /*ESPACIO ENTRE CADA UNO DE LOS ITEMS DEL NAV*/
@@ -666,9 +665,17 @@ body {
     background-image: url(../imagenes/portfolio/portfolio3.jpg);
     height: 50vh;
   }
+  .portada__texto {
+    color: #e2e2e2;
+    background-color: black;
+    padding-bottom: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 12px;
+  }
   .portada__btn {
     position: relative;
-    right: 30px;
+    right: 23px;
   }
   .prendas {
     background-color: #e2e2e2;
@@ -810,6 +817,14 @@ body {
     right: 35px;
     left: 0px;
   }
+  .portada__texto {
+    color: #e2e2e2;
+    background-color: black;
+    padding-bottom: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 12px;
+  }
   .prendas {
     background-color: #e2e2e2;
   }
@@ -916,7 +931,7 @@ body {
   }
   .portada__btn {
     position: relative;
-    right: 28px;
+    right: 23px;
   }
   .formulario2__boton {
     position: relative;
@@ -955,7 +970,15 @@ body {
     left: 0px;
   }
   .portada__btn {
-    margin-left: 55px;
+    margin-left: 52px;
+  }
+  .portada__texto {
+    color: #e2e2e2;
+    background-color: black;
+    padding-bottom: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 12px;
   }
   .portada {
     background-image: url(../imagenes/portfolio/portfolio3.jpg);
