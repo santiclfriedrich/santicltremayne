@@ -70,6 +70,8 @@ body {
 
 .prendas__imagenes {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .prendas__boton {
@@ -194,7 +196,6 @@ body {
   display: -ms-flexbox;
   display: flex;
   height: 50vh;
-  width: 40%;
   margin: 30px auto;
   padding: 20px;
   border-radius: 5px;
@@ -370,8 +371,8 @@ body {
 .header__position, .portada, #portfolio, .img-nosotros, .portada-shop {
   -webkit-animation-name: aparecer;
           animation-name: aparecer;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 
 /*-----------------------------------------------MEDIA-QUERIES--------------ALL-DISPOSITIVOS-----------------*/
@@ -381,7 +382,7 @@ body {
     font-size: 15px;
   }
   .header__logo {
-    font-size: 40px;
+    font-size: 45px;
     position: relative;
     bottom: 2px;
   }
@@ -453,19 +454,6 @@ body {
             flex-direction: column;
   }
   /*-------------------------SE-CIERRA-FOOTER---------768----------------*/
-  /*----------------------SECCION-NOSOTROS----------768---------------*/
-  .img-nosotros {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: 40vh;
-    width: 100%;
-    margin: 30px auto;
-    padding: 20px;
-    border-radius: 5px;
-    border-color: #e2e2e2;
-  }
-  /*------------------CIERRA--SECCION-NOSOTROS----------768-----------------*/
   /*----------------------SECCION-CONTACTO----------768---------------*/
   .formulario__boton {
     position: relative;
@@ -529,7 +517,7 @@ body {
 }
 
 /*------------------SE CIERRA GALERIA MEDIA QUERIES-------------------*/
-@media only screen and (max-device-width: 1024px) and (min-device-width: 769px) {
+@media only screen and (max-device-width: 1370px) and (min-device-width: 992px) {
   /*-----------------HEADER-MEDIA-QUERIES-----1024----------------------*/
   .header__logo {
     font-size: 44px;
@@ -656,8 +644,8 @@ body {
     /*ESPACIO ENTRE CADA UNO DE LOS ITEMS DEL NAV*/
     padding-left: 40px;
     position: relative;
-    right: 10px;
-    left: 0px;
+    right: 50px;
+    left: -40px;
   }
   /*---------------SE-CIERRA-HEADER----------320---------------------*/
   /*---------------HOME-----MEDIA-QUERIES-------320------------------*/
@@ -794,17 +782,17 @@ body {
     font-size: 12px;
   }
   .header__logo {
-    font-size: 30px;
+    font-size: 35px;
     position: relative;
   }
   .header__search {
     position: absolute;
-    bottom: 90.1%;
+    bottom: 89.5%;
     left: 85.5%;
   }
   .header__cart {
     position: absolute;
-    bottom: 90.1%;
+    bottom: 89.5%;
     left: 92.5%;
   }
   .header__text {
@@ -814,8 +802,8 @@ body {
     /*ESPACIO ENTRE CADA UNO DE LOS ITEMS DEL NAV*/
     padding-left: 40px;
     position: relative;
-    right: 35px;
-    left: 0px;
+    right: 50px;
+    left: -35px;
   }
   .portada__texto {
     color: #e2e2e2;
@@ -946,17 +934,17 @@ body {
     font-size: 12px;
   }
   .header__logo {
-    font-size: 30px;
+    font-size: 40px;
     position: relative;
   }
   .header__search {
     position: absolute;
-    bottom: 90.1%;
+    bottom: 89.3%;
     left: 85.5%;
   }
   .header__cart {
     position: absolute;
-    bottom: 90.1%;
+    bottom: 89.3%;
     left: 92.5%;
   }
   .header__text {
@@ -966,8 +954,8 @@ body {
     /*ESPACIO ENTRE CADA UNO DE LOS ITEMS DEL NAV*/
     padding-left: 40px;
     position: relative;
-    right: 30px;
-    left: 0px;
+    right: 50px;
+    left: -30px;
   }
   .portada__btn {
     margin-left: 52px;
@@ -1008,12 +996,6 @@ body {
     border-color: #e2e2e2;
   }
   /*---------------SE-CIERRA-HEADER----------425---------------------*/
-  /*-----------------------NOSOTROS---MEDIA-QUERIES----425-------------*/
-  .img-nosotros {
-    height: 30vh;
-    width: 90%;
-  }
-  /*---------------------CIERRA-NOSOTROS-QUERIES-------425------------*/
   /*-----------------------GALERIA----MEDIA-QUERIES---425---------------*/
   #portfolio {
     margin: 15px 15px;
@@ -1091,5 +1073,38 @@ body {
   .formulario2__boton {
     position: relative;
     left: 39%;
+  }
+}
+
+@media only screen and (max-device-width: 991px) and (min-device-width: 769px) {
+  .header__logo {
+    font-size: 44px;
+    position: relative;
+  }
+  .header__nav {
+    /*ESPACIO ENTRE CADA UNO DE LOS ITEMS DEL NAV*/
+    padding-left: 5px;
+    position: relative;
+  }
+  .header__burguermenu {
+    /*SACAR BORDES AL MENU BURGUER*/
+    position: relative;
+    left: -90%;
+    bottom: 4.5px;
+  }
+  .header__search {
+    position: absolute;
+    bottom: 88%;
+    left: 92%;
+    color: honeydew;
+  }
+  .header__cart {
+    position: absolute;
+    bottom: 88%;
+    left: 95%;
+    color: honeydew;
+  }
+  .navbar-brand {
+    position: relative;
   }
 }

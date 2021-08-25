@@ -32,7 +32,7 @@
 
 .header__position, .portada, #portfolio, .img-nosotros, .portada-shop{
     animation-name: aparecer;
-    animation-duration: 3s;
+    animation-duration: 2s;
 }
 
 
@@ -49,7 +49,7 @@
     }
 
     .header__logo{ 
-        font-size: 40px;
+        font-size: 45px;
         position: relative;
         bottom: 2px;
     }
@@ -122,20 +122,6 @@
     }
   
     /*-------------------------SE-CIERRA-FOOTER---------768----------------*/
-  
-
-    /*----------------------SECCION-NOSOTROS----------768---------------*/
-    .img-nosotros{
-        display: flex;
-        height: 40vh;
-        width: 100%;
-        margin: 30px auto;
-        padding: 5*4px;
-        border-radius: 5px;
-        border-color: #e2e2e2;
-    }
-
-    /*------------------CIERRA--SECCION-NOSOTROS----------768-----------------*/
 
     /*----------------------SECCION-CONTACTO----------768---------------*/
 
@@ -205,7 +191,7 @@
 
     /*------------------SE CIERRA GALERIA MEDIA QUERIES-------------------*/
 
-    @media only screen and (max-device-width: 1024px) and (min-device-width: 769px){
+    @media only screen and (max-device-width: 1370px) and (min-device-width: 992px){
     /*-----------------HEADER-MEDIA-QUERIES-----1024----------------------*/
 
         .header{
@@ -342,8 +328,8 @@
             &__nav{ /*ESPACIO ENTRE CADA UNO DE LOS ITEMS DEL NAV*/
                 padding-left: 40px;
                 position: relative;
-                right: 10px;
-                left: 0px;
+                right: 50px;
+                left: -40px;
             }
         }
 
@@ -483,17 +469,17 @@
 
         .header{
             &__logo{
-                font-size: 30px;
+                font-size: 35px;
                 position: relative;
             }
             &__search{
                 position: absolute;
-                bottom: 90.1%;
+                bottom: 89.5%;
                 left: 85.5%;
             }
             &__cart{
                 position: absolute;
-                bottom: 90.1%;
+                bottom: 89.5%;
                 left: 92.5%;
             }
             &__text{
@@ -502,8 +488,8 @@
             &__nav{ /*ESPACIO ENTRE CADA UNO DE LOS ITEMS DEL NAV*/
                 padding-left: 40px;
                 position: relative;
-                right: 35px;
-                left: 0px;
+                right: 50px;
+                left: -35px;
             }
         }
 
@@ -635,17 +621,17 @@
 
         .header{
             &__logo{
-                font-size: 30px;
+                font-size: 40px;
                 position: relative;
             }
             &__search{
                 position: absolute;
-                bottom: 90.1%;
+                bottom: 89.3%;
                 left: 85.5%;
             }
             &__cart{
                 position: absolute;
-                bottom: 90.1%;
+                bottom: 89.3%;
                 left: 92.5%;
             }
             &__text{
@@ -654,8 +640,8 @@
             &__nav{ /*ESPACIO ENTRE CADA UNO DE LOS ITEMS DEL NAV*/
                 padding-left: 40px;
                 position: relative;
-                right: 30px;
-                left: 0px;
+                right: 50px;
+                left: -30px;
             }
         }
 
@@ -699,12 +685,6 @@
         }
         /*---------------SE-CIERRA-HEADER----------425---------------------*/
 
-        /*-----------------------NOSOTROS---MEDIA-QUERIES----425-------------*/
-        .img-nosotros{
-            height: 30vh;
-            width: 90%;
-        }
-        /*---------------------CIERRA-NOSOTROS-QUERIES-------425------------*/
         /*-----------------------GALERIA----MEDIA-QUERIES---425---------------*/
 
         #portfolio{
@@ -774,3 +754,39 @@
             left: 39%;
         }
     }
+
+    @media only screen 
+    and (max-device-width : 991px) and (min-device-width: 769px){
+        .header{
+            &__logo{ 
+                font-size: 44px;
+                position: relative;
+            }
+            &__nav{ /*ESPACIO ENTRE CADA UNO DE LOS ITEMS DEL NAV*/
+                padding-left: 5px;
+                position: relative;
+            }
+            &__burguermenu{ /*SACAR BORDES AL MENU BURGUER*/
+                position: relative;
+                left: -90%;
+                bottom: 4.5px;
+            }
+            &__search{
+                position: absolute;
+                bottom: 88%;
+                left: 92%;
+                color: honeydew;
+            }
+            &__cart{
+                position: absolute;
+                bottom: 88%;
+                left: 95%;
+                color: honeydew;
+            }
+        }
+
+        .navbar-brand{
+        position: relative;
+        
+        }
+}
