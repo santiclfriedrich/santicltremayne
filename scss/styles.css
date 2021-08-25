@@ -296,14 +296,14 @@ body {
 
 .header__search {
   position: absolute;
-  bottom: 89.5%;
+  bottom: 90%;
   left: 92%;
   color: honeydew;
 }
 
 .header__cart {
   position: absolute;
-  bottom: 89.5%;
+  bottom: 90%;
   left: 95%;
   color: honeydew;
 }
