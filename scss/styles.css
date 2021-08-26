@@ -308,6 +308,19 @@ body {
   color: honeydew;
 }
 
+.header__iconos {
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 /*------------------------CIERRA HEADER------------------------*/
 /*-------------SE ABRE FOOTER---------------*/
 .footer {

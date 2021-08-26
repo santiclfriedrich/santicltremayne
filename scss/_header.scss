@@ -58,6 +58,12 @@ $ancho: 25px;
         left: 95%;
         color: honeydew;
     }
+    &__iconos{
+        float: right;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
 }
 
 
