@@ -337,6 +337,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   margin-right: 20px;
+  margin-top: 0px;
   cursor: pointer;
   position: relative;
   z-index: 3;
