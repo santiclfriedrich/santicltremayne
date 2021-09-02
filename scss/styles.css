@@ -324,6 +324,7 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  margin-right: 50px;
 }
 
 .header__iconos .nav-items {
@@ -450,6 +451,9 @@ body {
   }
   .navbar-brand {
     position: relative;
+  }
+  .header__iconos {
+    margin-right: 0px;
   }
   .header__iconos .nav-items {
     display: -webkit-box;
@@ -582,6 +586,9 @@ body {
     vertical-align: middle;
     color: honeydew;
   }
+  .header__iconos {
+    margin-right: 0px;
+  }
   .header__iconos .nav-items {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -699,6 +706,7 @@ body {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+    margin-right: 0px;
   }
   .header__iconos .nav-items {
     display: -webkit-box;
@@ -870,6 +878,9 @@ body {
     right: 55px;
     left: -35px;
   }
+  .header__iconos {
+    margin-right: 0px;
+  }
   .header__iconos .nav-items {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1034,6 +1045,9 @@ body {
     position: relative;
     right: 50px;
     left: -30px;
+  }
+  .header__iconos {
+    margin-right: 0px;
   }
   .portada__btn {
     margin-left: 52px;
@@ -1209,6 +1223,9 @@ body {
   }
   .header__text {
     font-size: 16px;
+  }
+  .header__iconos {
+    margin-right: 0px;
   }
   .formulario2__boton {
     position: relative;

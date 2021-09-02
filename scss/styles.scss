@@ -90,6 +90,10 @@
         position: relative;
     }
 
+    .header__iconos{
+        margin-right: 0px;
+    }
+
     .header__iconos .nav-items{
         display: flex;
         align-items: center;
@@ -216,6 +220,9 @@
                 vertical-align: middle;
                 color: honeydew;
             }
+            &__iconos{
+                margin-right: 0px;
+            }
         }
 
         .header__iconos .nav-items{
@@ -333,6 +340,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: flex-end;
+                margin-right: 0px;
             }
         }
 
@@ -501,6 +509,9 @@
                 right: 55px;
                 left: -35px;
             }
+            &__iconos{
+                margin-right: 0px;
+            }
         }
 
         .header__iconos .nav-items{
@@ -660,6 +671,9 @@
                 position: relative;
                 right: 50px;
                 left: -30px;
+            }
+            &__iconos{
+                margin-right: 0px;
             }
         }
 
@@ -829,6 +843,9 @@
             }
             &__text{
                 font-size: 16px;
+            }
+            &__iconos{
+                margin-right: 0px;
             }
         }
 
