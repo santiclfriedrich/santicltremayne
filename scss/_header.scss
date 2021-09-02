@@ -4,13 +4,8 @@ $ancho: 25px;
 
 .header{
     &__logo{ /*LOGO TREMAYNE*/
-        font-family: 'Krona One', sans-serif;
-        color: #E1DBBE;
         font-size: $ancho*2;
     }
-
-    
-
     &__logcont{ /*POSICIONAMIENTO DE LOGO EN EL MEDIO*/
         position: absolute;
         left: $all/2;
@@ -47,15 +42,11 @@ $ancho: 25px;
         border-radius: 12px;
     }
     &__search{
-        position: absolute;
-        bottom: 90%;
-        left: 92%;
+        vertical-align: middle;
         color: honeydew;
     }
     &__cart{
-        position: absolute;
-        bottom: 90%;
-        left: 95%;
+        vertical-align: middle;
         color: honeydew;
     }
     &__iconos{
@@ -64,6 +55,16 @@ $ancho: 25px;
         align-items: center;
         justify-content: flex-end;
     }
+}
+
+.header__iconos .nav-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    cursor: pointer;
+    position: relative;
+    z-index: 3;
 }
 
 

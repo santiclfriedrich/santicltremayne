@@ -13,9 +13,18 @@ body {
   font-size: 18px;
 }
 
+h1 {
+  font-family: 'Krona One', sans-serif;
+  color: #E1DBBE;
+}
+
 h2 {
   color: black;
   font-size: 40px;
+}
+
+body {
+  background-color: #e2e2e2;
 }
 
 /*----------------home-----------------------------HOME------------------------------home----------------------*/
@@ -50,10 +59,6 @@ h2 {
 
 /*--------------SE CIERRA LA 1ER SECTION-------*/
 /*------------SE ABRE 2DA SECTION-----------*/
-body {
-  background-color: #e2e2e2;
-}
-
 .prendas {
   background-color: #e2e2e2;
 }
@@ -200,6 +205,8 @@ body {
   padding: 20px;
   border-radius: 5px;
   border-color: #e2e2e2;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /*-----------------------------------------------SE CIERRA NOSOTROS----------------------------------------------*/
@@ -235,12 +242,14 @@ body {
   padding: 5px;
 }
 
+.negrita {
+  font-weight: bold;
+}
+
 /*-----------------------------------------------SE CIERRA CONTACTO----------------------------------------------*/
 /*---------------------------HEADER---------------------------*/
 .header__logo {
   /*LOGO TREMAYNE*/
-  font-family: 'Krona One', sans-serif;
-  color: #E1DBBE;
   font-size: 50px;
 }
 
@@ -295,16 +304,12 @@ body {
 }
 
 .header__search {
-  position: absolute;
-  bottom: 90%;
-  left: 92%;
+  vertical-align: middle;
   color: honeydew;
 }
 
 .header__cart {
-  position: absolute;
-  bottom: 90%;
-  left: 95%;
+  vertical-align: middle;
   color: honeydew;
 }
 
@@ -319,6 +324,22 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+.header__iconos .nav-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 20px;
+  cursor: pointer;
+  position: relative;
+  z-index: 3;
 }
 
 /*------------------------CIERRA HEADER------------------------*/
@@ -419,26 +440,30 @@ body {
     bottom: 4.5px;
   }
   .header__search {
-    position: absolute;
-    bottom: 88.5%;
-    left: 87%;
+    vertical-align: middle;
     color: honeydew;
   }
   .header__cart {
-    position: absolute;
-    bottom: 88.5%;
-    left: 94%;
+    vertical-align: middle;
     color: honeydew;
   }
   .navbar-brand {
     position: relative;
   }
-  .header__nav {
-    /*ESPACIO ENTRE CADA UNO DE LOS ITEMS DEL NAV*/
-    padding-left: 40px;
+  .header__iconos .nav-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-right: 15px;
+    margin-bottom: 7px;
+    cursor: pointer;
     position: relative;
-    right: 0px;
-    left: 75px;
   }
   /*-------------------------SE-CIERRA-HEADER-------------------------*/
   .formulario2__boton {
@@ -470,7 +495,7 @@ body {
   /*----------------------SECCION-CONTACTO----------768---------------*/
   .formulario__boton {
     position: relative;
-    left: 42%;
+    left: 45%;
     margin-bottom: 25px;
     border-radius: 12px;
   }
@@ -549,16 +574,26 @@ body {
     bottom: 4.5px;
   }
   .header__search {
-    position: absolute;
-    bottom: 88%;
-    left: 92%;
+    vertical-align: middle;
     color: honeydew;
   }
   .header__cart {
-    position: absolute;
-    bottom: 88%;
-    left: 95%;
+    vertical-align: middle;
     color: honeydew;
+  }
+  .header__iconos .nav-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-right: 30px;
+    cursor: pointer;
+    position: relative;
   }
   .navbar-brand {
     position: relative;
@@ -609,15 +644,8 @@ body {
     right: 9.5px;
   }
   .img-nosotros {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: 40vh;
-    width: 50%;
-    margin: 30px auto;
-    padding: 20px;
-    border-radius: 5px;
-    border-color: #e2e2e2;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .formulario__boton {
     position: relative;
@@ -640,15 +668,14 @@ body {
     font-size: 30px;
     position: relative;
   }
+  .header__logcont {
+    margin-right: 0;
+  }
   .header__search {
-    position: absolute;
-    bottom: 90.1%;
-    left: 85.5%;
+    vertical-align: middle;
   }
   .header__cart {
-    position: absolute;
-    bottom: 90.1%;
-    left: 92.5%;
+    vertical-align: middle;
   }
   .header__text {
     font-size: 16px;
@@ -659,6 +686,33 @@ body {
     position: relative;
     right: 50px;
     left: -40px;
+  }
+  .header__iconos {
+    float: right;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .header__iconos .nav-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-right: 7px;
+    margin-bottom: 7px;
+    cursor: pointer;
+    position: relative;
   }
   /*---------------SE-CIERRA-HEADER----------320---------------------*/
   /*---------------HOME-----MEDIA-QUERIES-------320------------------*/
@@ -775,6 +829,8 @@ body {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+    padding-right: 0px;
+    padding-top: 0px;
   }
   .footer__menu {
     display: -webkit-box;
@@ -796,17 +852,12 @@ body {
   }
   .header__logo {
     font-size: 35px;
-    position: relative;
   }
   .header__search {
-    position: absolute;
-    bottom: 89.5%;
-    left: 85.5%;
+    vertical-align: middle;
   }
   .header__cart {
-    position: absolute;
-    bottom: 89.5%;
-    left: 92.5%;
+    vertical-align: middle;
   }
   .header__text {
     font-size: 16px;
@@ -815,8 +866,23 @@ body {
     /*ESPACIO ENTRE CADA UNO DE LOS ITEMS DEL NAV*/
     padding-left: 40px;
     position: relative;
-    right: 50px;
+    right: 55px;
     left: -35px;
+  }
+  .header__iconos .nav-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-right: 10px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    position: relative;
   }
   .portada__texto {
     color: #e2e2e2;
@@ -871,6 +937,8 @@ body {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+    padding-right: 0px;
+    padding-top: 0px;
   }
   .footer__menu {
     display: -webkit-box;
@@ -951,14 +1019,10 @@ body {
     position: relative;
   }
   .header__search {
-    position: absolute;
-    bottom: 89.3%;
-    left: 85.5%;
+    vertical-align: middle;
   }
   .header__cart {
-    position: absolute;
-    bottom: 89.3%;
-    left: 92.5%;
+    vertical-align: middle;
   }
   .header__text {
     font-size: 16px;
@@ -1063,6 +1127,8 @@ body {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+    padding-right: 0px;
+    padding-top: 0px;
   }
   .footer__menu {
     display: -webkit-box;
@@ -1106,18 +1172,113 @@ body {
     bottom: 4.5px;
   }
   .header__search {
-    position: absolute;
-    bottom: 88%;
-    left: 92%;
+    vertical-align: middle;
     color: honeydew;
   }
   .header__cart {
-    position: absolute;
-    bottom: 88%;
-    left: 95%;
+    vertical-align: middle;
     color: honeydew;
   }
   .navbar-brand {
     position: relative;
+  }
+  .header__iconos .nav-items {
+    width: 32px;
+    height: 32px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: 12px;
+    cursor: pointer;
+    position: relative;
+    z-index: 3;
+  }
+}
+
+/*------MEDIA QUERIES GALAXY FOLD-----*/
+@media only screen and (max-device-width: 319px) {
+  .header__logo {
+    font-size: 25px;
+  }
+  .header__text {
+    font-size: 16px;
+  }
+  .formulario2__boton {
+    position: relative;
+    left: 29%;
+  }
+  /*-----------------------GALERIA----MEDIA-QUERIES---280---------------*/
+  #portfolio {
+    margin: 15px 15px;
+  }
+  .galeria__autor {
+    color: grey;
+    text-align: center;
+  }
+  .galeria__imagenes {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 250px;
+        grid-template-columns: 250px;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  #portfolio2 {
+    margin: 15px 15px;
+  }
+  .galeria2__autor2 {
+    color: grey;
+    text-align: center;
+  }
+  .galeria2__imagenes2 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 250px;
+        grid-template-columns: 250px;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  /*----------------------SE-CIERRA-GALERIA---QUERIES-----280------------*/
+  /*-----------------------CONTACTO-QUERIES--------425-------------------*/
+  .contact__text {
+    font-size: 14px;
+  }
+  .formulario__boton {
+    position: relative;
+    left: 37%;
+  }
+}
+
+@media only screen and (max-device-width: 540px) and (min-device-width: 426px) {
+  .portada__btn {
+    margin-left: 52px;
+  }
+  .footer__icons {
+    padding-right: 0px;
+    padding-top: 0px;
+  }
+  .formulario2__boton {
+    position: relative;
+    left: 43%;
+  }
+  .formulario__boton {
+    position: relative;
+    left: 43%;
   }
 }

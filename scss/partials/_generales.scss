@@ -9,6 +9,11 @@ body{ /* ESTILO DE FUENTE */
     font-size: 18px;
 }
 
+h1{
+    font-family: 'Krona One', sans-serif;
+    color: #E1DBBE;
+}
+
 h2{
     color: black;
     font-size: 40px;
@@ -17,3 +22,4 @@ h2{
 $colorbg: #e2e2e2;
 $ancho: 25px;
 $all: 100%;
+$negrita: bold;
