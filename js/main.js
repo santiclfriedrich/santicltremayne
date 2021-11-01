@@ -29,6 +29,8 @@ let prendas = [
     }
 ];
 
+console.log(prendas);
+console.log();
 
 // Limite de productos a agregar (25)
 function addProduct() {
@@ -116,4 +118,3 @@ function vaciarCarrito() {
 
     console.log("\nEl total de productos en su carrito es: " + totalPrendas);
 }
-
