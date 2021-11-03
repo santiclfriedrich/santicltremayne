@@ -1,120 +1,121 @@
-//Desafio 6 - Santiago Claros Friedrich
+//Segunda Entrega del Proyecto Final - Santiago Claros Friedrich
 
-// Variables y objetos
-let totalPrendas = 0,
-    totalPrecio = 0;
+const addToShoppingCartButtons = document.querySelectorAll('.addToCart')
+addToShoppingCartButtons.forEach(addToCartButton => {
+    addToCartButton.addEventListener('click', addToCartClicked);
+});
 
+const comprarButton = document.querySelector('.comprarButton');
+comprarButton.addEventListener('click', comprarButtonClicked);
 
-let prendas = [
+const shoppingCartItemsContainer = document.querySelector(
+    '.shoppingCartItemsContainer'
+    );
 
-    {   'nombre': 'Oversized Negra',
-        'precio': 1760,
-        'cantidad': 0,
-        'marca': 'Heiston',
-        'talle': 'M',
-    },
+function addToCartClicked(event) {
+    const button = event.target;
+    const item = button.closest('.item');
+      
+    const itemTitle = item.querySelector('.item-title').textContent;
+    const itemPrice = item.querySelector('.item-price').textContent;
+    const itemImage = item.querySelector('.item-image').src;
+      
+    addItemToShoppingCart(itemTitle, itemPrice, itemImage);
+}
 
-    {   'nombre': 'Buzo Salmón',
-        'precio': 4600,
-        'cantidad': 0,
-        'marca': 'Straight',
-        'talle': 'XL',
-    },
-
-    {   'nombre': 'Chino Azul',
-        'precio': 5300,
-        'cantidad': 0,
-        'marca': 'Tremayne',
-        'talle': 'S',
+function addItemToShoppingCart(itemTitle, itemPrice, itemImage) {
+  const elementsTitle = shoppingCartItemsContainer.getElementsByClassName(
+    'shoppingCartItemTitle'
+  );
+  for (let i = 0; i < elementsTitle.length; i++) {
+    if (elementsTitle[i].innerText === itemTitle) {
+      let elementQuantity = elementsTitle[
+        i
+      ].parentElement.parentElement.parentElement.querySelector(
+        '.shoppingCartItemQuantity'
+      );
+      elementQuantity.value++;
+      $('.toast').toast('show');
+      updateShoppingCartTotal();
+      return;
     }
-];
+  }
 
-console.log(prendas);
-console.log();
+  const shoppingCartRow = document.createElement('div');
+  const shoppingCartContent = `
+  <div class="row shoppingCartItem">
+        <div class="col-6">
+            <div class="shopping-cart-item d-flex align-items-center h-100 border-bottom pb-2 pt-3">
+                <img src=${itemImage} class="shopping-cart-image">
+                <h6 class="shopping-cart-item-title shoppingCartItemTitle text-truncate ml-3 mb-0">${itemTitle}</h6>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="shopping-cart-price d-flex align-items-center h-100 border-bottom pb-2 pt-3">
+                <p class="item-price mb-0 shoppingCartItemPrice">${itemPrice}</p>
+            </div>
+        </div>
+        <div class="col-4">
+            <div
+                class="shopping-cart-quantity d-flex justify-content-between align-items-center h-100 border-bottom pb-2 pt-3">
+                <input class="shopping-cart-quantity-input shoppingCartItemQuantity" type="number"
+                    value="1">
+                <button class="btn btn-danger buttonDelete" type="button">X</button>
+            </div>
+        </div>
+    </div>`;
+  shoppingCartRow.innerHTML = shoppingCartContent;
+  shoppingCartItemsContainer.append(shoppingCartRow);
 
-// Limite de productos a agregar (25)
-function addProduct() {
-    totalPrendas = totalPrendas + 1;
-    if (totalPrendas == 25) {
-        alert("El carrito de compras está lleno");
-    }
+  shoppingCartRow
+    .querySelector('.buttonDelete')
+    .addEventListener('click', removeShoppingCartItem);
+
+  shoppingCartRow
+    .querySelector('.shoppingCartItemQuantity')
+    .addEventListener('change', quantityChanged);
+
+  updateShoppingCartTotal();
 }
 
-// Agregar producto : Oversized negra
-function addProduct1() {
-    prendas[0].cantidad = prendas[0].cantidad + 1;
-    console.log('Oversized Negra agregada exitosamente al carrito');
-}
+function updateShoppingCartTotal() {
+    let total = 0;
+    const shoppingCartTotal = document.querySelector('.shoppingCartTotal');
+  
+    const shoppingCartItems = document.querySelectorAll('.shoppingCartItem');
+  
+    shoppingCartItems.forEach((shoppingCartItem) => {
+      const shoppingCartItemPriceElement = shoppingCartItem.querySelector(
+        '.shoppingCartItemPrice'
+      );
+      const shoppingCartItemPrice = Number(
+        shoppingCartItemPriceElement.textContent.replace('$', '')
+      );
+      const shoppingCartItemQuantityElement = shoppingCartItem.querySelector(
+        '.shoppingCartItemQuantity'
+      );
+      const shoppingCartItemQuantity = Number(
+        shoppingCartItemQuantityElement.value
+      );
+      total = total + shoppingCartItemPrice * shoppingCartItemQuantity;
+    });
+    shoppingCartTotal.innerHTML = `${total}$`;
+  }
 
-// Agregar producto : Buzo Salmón
-function addProduct2() {
-    prendas[1].cantidad = prendas[1].cantidad + 1;
-    console.log('Buzo Salmón agregado exitosamente al carrito');
-}
-
-// Agregar producto : Chino Azul
-function addProduct3() {
-    prendas[2].cantidad = prendas[2].cantidad + 1;
-    console.log('Chino Azul agregado exitosamente al carrito');
-}
-
-// Información detallada sobre un producto
-function infOversized() {
-    console.log('Oversized Negra:\n');
-    console.log(prendas[0]);
-}
-
-// Información detallada sobre un producto
-function infBuzoSalmon() {
-    console.log('Buzo Salmón:\n');
-    console.log(prendas[1]);
-}
-
-// Información detallada sobre un producto
-function infChinoAzul() {
-    console.log('Chino Azul:\n');
-    console.log(prendas[2]);
-}
-
-// Calculo individual del precio de los productos y Precio Total de cada variable de los productos
-function totalCarrito() {
-    prendas[0].precio = prendas[0].precio * prendas[0].cantidad;
-    prendas[1].precio = prendas[1].precio * prendas[1].cantidad;
-    prendas[2].precio = prendas[2].precio * prendas[2].cantidad;
-
-    precioTotal = prendas[0].precio + prendas[1].precio + prendas[2].precio;
-}
-
-// Muestra en consola la cantidad y precio de la compra realizada
-function verCarrito() {
-    // funcion que suma el precio total de la compra
-    totalCarrito();
-
-    console.log("\nEl total de su compra de la prenda Oversized Negra es de: " + prendas[0].cantidad);
-    console.log("El valor total de su compra Oversized Negra es de: $" + prendas[0].precio);
-
-    console.log("\nEl total de su compra de la prenda Buzo Salmón es de: " + prendas[1].cantidad);
-    console.log("El valor total de su compra Buzo Salmón es de: $" + prendas[1].precio);
-
-    console.log("\nEl total de su compra de la prenda Chino Azul es de: " + prendas[2].cantidad);
-    console.log("El valor total de su compra Chino Azul es de: $" + prendas[2].precio);
-
-    alert("\n El monto total de su compra es $" + totalPrecio);
-}
-
-// Reset del carrito con alerta y aviso en consola
-function vaciarCarrito() {
-    prendas[0].cantidad = 0;
-    prendas[1].cantidad = 0;
-    prendas[2].cantidad = 0;
-
-    prendas[0].precio = 1760;
-    prendas[1].precio = 4600;
-    prendas[2].precio = 5300;
-    
-    totalProductos = 0;
-    totalPrecio = 0;
-    alert("Vaciaste tu carrito de compras");
-
-    console.log("\nEl total de productos en su carrito es: " + totalPrendas);
-}
+  function removeShoppingCartItem(event) {
+    const buttonClicked = event.target;
+    buttonClicked.closest('.shoppingCartItem').remove();
+    updateShoppingCartTotal();
+  }
+  
+  function quantityChanged(event) {
+    const input = event.target;
+    input.value <= 0 ? (input.value = 1) : null;
+    updateShoppingCartTotal();
+  }
+  
+  function comprarButtonClicked() {
+    shoppingCartItemsContainer.innerHTML = '';
+    updateShoppingCartTotal();
+  }
+  
