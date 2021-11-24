@@ -118,4 +118,18 @@ function updateShoppingCartTotal() {
     shoppingCartItemsContainer.innerHTML = '';
     updateShoppingCartTotal();
   }
-  
+
+  $(document).ready(function (){
+
+    $('.comprarButton').click(function(){
+
+      $("#comprafin").prepend('<p class = "comprafinish">Gracias por realizar su compra</p>');
+      //Ocultamos con fadeOut() todos los <h3>
+      $(".comprafinish").fadeOut("slow", function(){
+      //Cuando termina de ocultarse el elemento lo mostramos nuevamente
+      $(".comprafinish").fadeOut();
+      }); 
+
+    })
+
+  })

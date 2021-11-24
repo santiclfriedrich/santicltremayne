@@ -1,0 +1,11 @@
+[
+    {"id": "1", "titulo": "Anorak Gris", "imagen": "../imagenes/shop/anorak-gris-shop.png", "precio": "6800"},
+    {"id": "2", "titulo": "Buzo Salmon", "imagen": "../imagenes/shop/buzo-liso-shop.png", "precio": "4700"},
+    {"id": "3", "titulo": "Camisa a cuadros", "imagen": "../imagenes/shop/camisa-shop.png", "precio": "3000"},
+    {"id": "4", "titulo": "Chino Azul", "imagen": "../imagenes/shop/chino-azul-shop.png", "precio": "5300"},
+    {"id": "5", "titulo": "Hoodie Negro Tremayne", "imagen": "../imagenes/shop/hoodie-negro.jpg", "precio": "2500"},
+    {"id": "6", "titulo": "Medias rayadas", "imagen": "../imagenes/shop/medias-shop.png", "precio": "700"},
+    {"id": "7", "titulo": "Boxer Negro", "imagen": "../imagenes/shop/boxer-shop.png", "precio": "1200"},
+    {"id": "8", "titulo": "Oversized Negra", "imagen": "../imagenes/shop/oversized-negra-shop.png", "precio": "1760"},
+    {"id": "9", "titulo": "Pantalon Khakis", "imagen": "../imagenes/shop/chino-khaki-shop.png", "precio": "5300"}
+]
