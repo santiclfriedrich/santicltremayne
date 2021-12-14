@@ -1,4 +1,4 @@
-//Segunda Entrega del Proyecto Final - Santiago Claros Friedrich
+//Proyecto Final - Santiago Claros Friedrich
 
 const addToShoppingCartButtons = document.querySelectorAll('.addToCart')
 addToShoppingCartButtons.forEach(addToCartButton => {
@@ -117,19 +117,18 @@ function updateShoppingCartTotal() {
   function comprarButtonClicked() {
     shoppingCartItemsContainer.innerHTML = '';
     updateShoppingCartTotal();
+
   }
 
-  $(document).ready(function (){
+  (function(){
 
-    $('.comprarButton').click(function(){
+    $(function(){
 
-      $("#comprafin").prepend('<p class = "comprafinish">Gracias por realizar su compra</p>');
-      //Ocultamos con fadeOut() todos los <h3>
-      $(".comprafinish").fadeOut("slow", function(){
-      //Cuando termina de ocultarse el elemento lo mostramos nuevamente
-      $(".comprafinish").fadeOut();
-      }); 
+      $('#comprarBoton').on('click', function(){
+          alert("Gracias por su compra")
+      });
 
-    })
+    });
 
-  })
+}());
+
