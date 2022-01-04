@@ -12,6 +12,8 @@ const shoppingCartItemsContainer = document.querySelector(
     '.shoppingCartItemsContainer'
     );
 
+//Accion al clickear agregar carrito
+
 function addToCartClicked(event) {
     const button = event.target;
     const item = button.closest('.item');
@@ -22,6 +24,8 @@ function addToCartClicked(event) {
       
     addItemToShoppingCart(itemTitle, itemPrice, itemImage);
 }
+
+//Agregar al carrito
 
 function addItemToShoppingCart(itemTitle, itemPrice, itemImage) {
   const elementsTitle = shoppingCartItemsContainer.getElementsByClassName(
@@ -78,6 +82,8 @@ function addItemToShoppingCart(itemTitle, itemPrice, itemImage) {
   updateShoppingCartTotal();
 }
 
+//Datos de la compra
+
 function updateShoppingCartTotal() {
     let total = 0;
     const shoppingCartTotal = document.querySelector('.shoppingCartTotal');
@@ -102,6 +108,8 @@ function updateShoppingCartTotal() {
     shoppingCartTotal.innerHTML = `${total}$`;
   }
 
+  //Remover items del carrito
+
   function removeShoppingCartItem(event) {
     const buttonClicked = event.target;
     buttonClicked.closest('.shoppingCartItem').remove();
@@ -114,6 +122,8 @@ function updateShoppingCartTotal() {
     updateShoppingCartTotal();
   }
   
+  //Accion de compra
+
   function comprarButtonClicked() {
     shoppingCartItemsContainer.innerHTML = '';
     updateShoppingCartTotal();
