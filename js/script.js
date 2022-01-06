@@ -14,7 +14,7 @@ fetch('productos.json')
    dataProductos.forEach((productoEnArray, indice)=> {
    
        divProductos.innerHTML += `
-        <div class="card border-success mb-2" id="producto${indice}" style="max-width: 30rem; margin:0px;">
+        <div class="card border-dark mb-2" id="producto${indice}" style="max-width: 30rem; margin:0px;">
             <div class="card-header text-center">${productoEnArray.nombre}</div>
             <img src="../imagenes/shop/${productoEnArray.image}" class="card-img-top" alt="...">
             <div class="card-body">
