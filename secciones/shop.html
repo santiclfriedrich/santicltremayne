@@ -41,15 +41,12 @@
                 <a class="nav-link header__text text-light" href="../secciones/contacto.html">Contacto</a>
               </li>
             </ul>
+            <ul className="navbar-nav me-auto">  
+              <li className="nav-item " >
+                  <a id="botonCarrito" data-bs-toggle="modal" data-bs-target="#idModal" class="btn btn-secondary"><i class="fas fa-shopping-cart">Cart</i></a>
+              </li>
+          </ul> 
           </div>
-        </div>
-        <div class="header__iconos" style="width: 0px;">
-          <a href="" class="nav-items"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search header__search" viewBox="0 0 16 16">
-            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-          </svg></a>
-          <a href="" id="cart-info" class="nav-items"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart header__cart" viewBox="0 0 16 16">
-            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-          </svg></a>
         </div>
       </nav>
     </header>
@@ -89,204 +86,37 @@
             </div>
         </section>
 
-        <section class="shop m-4">
-          <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="item col cardshop">
-              <div class="card h-100">
-                <img src="../imagenes/shop/anorak-gris-shop.png" class="item-image card-img-top img-fluid" alt="Anorak_gris">
-                <div class="card-body">
-                  <h5 class="item-title card-title text-center">Anorak gris</h5>
-                  <p class="item-price card-text text-center text-success">$6800</p>
-                  <div class="d-grid justify-content-center align-items-center">
-                    <button class="item-button btn botonshop btn-secondary addToCart"><a class="botontext text-decoration-none">Comprar</a></button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item col cardshop">
-              <div class="card h-100">
-                <img src="../imagenes/shop/buzo-liso-shop.png" class="item-image card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="item-title card-title text-center">Buzo salmón</h5>
-                  <p class="item-price card-text text-center text-success">$4700</p>
-                  <div class="d-grid justify-content-center align-items-center">
-                    <button class="item-button btn botonshop btn-secondary addToCart"><a class="botontext text-decoration-none">Comprar</a></button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item col cardshop">
-              <div class="card h-100">
-                <img src="../imagenes/shop/camisa-shop.png" class="item-image card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="item-title card-title text-center">Camisa a cuadros</h5>
-                  <p class="item-price card-text text-center text-success">$3000</p>
-                  <div class="d-grid justify-content-center align-items-center">
-                    <button class="item-button btn botonshop btn-secondary addToCart"><a class="botontext text-decoration-none">Comprar</a></button>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div>
+              
+        </div>
+      </div> 
+    </nav>
+
+  <div id="divProductos" class="row"></div>
+
+  <div class="modal fade" id="idModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Carrito de Compras</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="item col cardshop pt-4">
-              <div class="card h-100">
-                <img src="../imagenes/shop/chino-azul-shop.png" class="item-image card-img-top img-fluid" alt="...">
-                <div class="card-body">
-                  <h5 class="item-title card-title text-center">Chino Azul</h5>
-                  <p class="item-price celeste card-text text-center text-success">$5300</p>
-                  <div class="d-grid justify-content-center align-items-center">
-                    <button class="item-button btn botonshop btn-secondary addToCart"><a class="botontext text-decoration-none">Comprar</a></button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item col cardshop pt-4">
-              <div class="card h-100">
-                <img src="../imagenes/shop/hoodie-black.png" class="item-image card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="item-title card-title text-center">Hoodie Negro Tremayne</h5> 
-                  <p class="item-price card-text text-center text-success">$2500</p>
-                  <div class="d-grid justify-content-center align-items-center">
-                    <button class="item-button btn botonshop btn-secondary addToCart"><a class="botontext text-decoration-none">Comprar</a></button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item col cardshop pt-4">
-              <div class="card h-100">
-                <img src="../imagenes/shop/medias-shop.png" class="item-image card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="item-title card-title text-center">Medias rayadas</h5>
-                  <p class="item-price card-text text-center text-success">$700</p>
-                  <div class="d-grid justify-content-center align-items-center">
-                    <button class="item-button btn botonshop btn-secondary addToCart"><a class="botontext text-decoration-none">Comprar</a></button>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="modal-body" id="modal-body">
+            
           </div>
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="item col cardshop pt-4">
-          <div class="card h-100">
-            <img src="../imagenes/shop/boxer-shop.png" class="item-image card-img-top img-fluid" alt="...">
-            <div class="card-body">
-              <h5 class="item-title card-title text-center">Boxer Negro</h5>
-              <p class="item-price celeste card-text text-center text-success">$1200</p>
-              <div class="d-grid justify-content-center align-items-center">
-                <button class="item-button btn botonshop btn-secondary addToCart"><a class="botontext text-decoration-none">Comprar</a></button>
-              </div>
-            </div>
+          <div class="row ml-ato">
+            <p id="precioTotal"></p>
+          </div>
+          <div class="modal-footer">
+            
+            
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" data-bs-dismiss="modal" class="btn btn-success" id="botonFinalizarCompra">Finalizar Compra</button>
           </div>
         </div>
-        <div class="item col cardshop pt-4">
-          <div class="card h-100">
-            <img src="../imagenes/shop/oversized-negra-shop.png" class="item-image card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="item-title card-title text-center">Oversized Negra</h5>
-              <p class="item-price azul card-text text-center text-success">$1760</p>
-              <div class="d-grid justify-content-center align-items-center">
-                <button class="item-button btn botonshop btn-secondary addToCart"><a class="botontext text-decoration-none">Comprar</a></button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="item col cardshop pt-4">
-          <div class="card h-100">
-            <img src="../imagenes/shop/chino-khaki-shop.png" class="item-image card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="item-title card-title text-center">Pantalon Khakis</h5>
-              <p class="item-price azul card-text text-center text-success">$5300</p>
-              <div class="d-grid justify-content-center align-items-center">
-                <button class="item-button btn botonshop btn-secondary addToCart"><a class="botontext text-decoration-none">Comprar</a></button>
-              </div>
-            </div>
-          </div>
-        </div>
-        </section>
-
-         <!-- COMIENZA SECTION SHOPPING CART -->
-      <section class="shopping-cart">
-        <div class="container-fluid">
-          <p class="text-center">CARRITO</p>
-          <hr>
-          <div class="row">
-              <div class="col-6">
-                  <div class="shopping-cart-header">
-                      <h6>Producto</h6>
-                  </div>
-              </div>
-              <div class="col-2">
-                  <div class="shopping-cart-header">
-                      <h6 class="text-truncate">Precio</h6>
-                  </div>
-              </div>
-              <div class="col-4">
-                  <div class="shopping-cart-header">
-                      <h6>Cantidad</h6>
-                  </div>
-              </div>
-          </div>
-          <!-- TERMINA SECTION SHOPPING CART -->
-
-        <!--COMIENZA SHOPPING CART ITEMS-->
-        <div class="shopping-cart-items shoppingCartItemsContainer">
-
-        </div>
-        <!--TERMINA SHOPPING CART ITEMS-->
-
-        <!-- COMIENZA TOTAL -->
-        <div class="row">
-          <div class="col-12">
-              <div class="shopping-cart-total d-flex align-items-center">
-                  <p class="mb-0">Total </p>
-                  <p class="ml-4 mb-0 shoppingCartTotal">0$</p>
-                  <div class="toast ml-auto bg-info" role="alert" aria-live="assertive" aria-atomic="true"
-                      data-delay="2000">
-                      <div class="toast-header">
-                          <span>✅</span>
-                          <strong class="mr-auto ml-1 text-secondary">Producto en el carrito</strong>
-                          <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                          </button>
-                      </div>
-                      <div class="toast-body text-white">
-                          Se aumentó correctamente la cantidad
-                      </div>
-                  </div>
-                  <button id="comprarBoton" class="btn btn-success ml-auto comprarButton" type="button" data-toggle="modal"
-                      data-target="#comprarModal">Comprar</button>
-              </div>
-          </div>
       </div>
-      <!-- TERMINA TOTAL -->
-      <!-- COMIENZA MODAL COMPRA -->
-      <div class="modal fade" id="comprarModal" tabindex="-1" aria-labelledby="comprarModalLabel"
-      aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-              <div class="modal-header">
-                  <h5 class="modal-title" id="comprarModalLabel">Gracias por comprar en Tremayne Shop!</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                  </button>
-              </div>
-              <div class="modal-body">
-                  <p>Una vez acreditado el pago, prepararemos su pedido</p>
-              </div>
-              <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-              </div>
-          </div>
-      </div>
-  </div>
-  <!-- TERMINA MODAL COMPRA -->
-
-  <!--APARECE AGREGADO AL CARRITO-->
-  <div id="comprafin">
-
-  </div>
-      
+    </div>
+  
 
         
         <section class="footer bg-dark text-light">
@@ -310,8 +140,12 @@
           </div>
         </section>
 
+        <script src="../js/Producto.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="../js/script.js"></script>
+        <script src="../js/eventos.js"></script>
+
         
-        <script src="../js/main.js"></script>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
 
