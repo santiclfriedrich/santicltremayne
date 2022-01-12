@@ -1,3 +1,4 @@
+//Calcular el total de la compra
 function compraTotal(productosDelStorage) {
     acumulador = 0;
     productosDelStorage.forEach((productoCarrito) => {
@@ -13,6 +14,7 @@ function compraTotal(productosDelStorage) {
    
 }
 
+//Cargar las funciones al modal (carrito)
 function cargarEventosModal(productosDelStorage) {
 
     productosDelStorage.forEach((productoCarrito, indice) => {
@@ -50,6 +52,7 @@ function cargarEventosModal(productosDelStorage) {
     
 }
 
+//Cargar los productos al modal con imágenes (carrito)
 function cargarProductosModal(productosDelStorage) {
 
     modalBody.innerHTML = " "  
@@ -78,10 +81,12 @@ function cargarProductosModal(productosDelStorage) {
         </div>
     `
 })
+//aplicar las funciones/eventos del carrito
 cargarEventosModal(productosDelStorage)
 compraTotal(productosDelStorage)
 }
 
+//agregar los productos del json al carrito
 botonCarrito.addEventListener('click', () => {
     let productosDelStorage = JSON.parse(localStorage.getItem('carrito'))
 
@@ -89,6 +94,7 @@ botonCarrito.addEventListener('click', () => {
     
 })
 
+//botón de acción al finalizar la compra
 botonFinalizarCompra.addEventListener('click', () => {
     localStorage.setItem('carrito', JSON.stringify([]))
     swal("Gracias por su compra!", "Los productos serán procesados y enviados", "success");
